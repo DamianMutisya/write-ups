@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cybersecurity Write-Ups</title>
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             line-height: 1.6;
             color: #333;
             max-width: 800px;
@@ -28,6 +35,30 @@
             font-style: italic;
             margin-top: 0.5rem;
         }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #34495e;
+            border-radius: 5px 5px 0 0;
+            padding: 10px 0;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav li {
+            margin: 0 10px;
+        }
+        nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            padding: 10px;
+        }
+        nav a:hover {
+            color: #bdc3c7;
+        }
         .content {
             background-color: #fff;
             padding: 20px;
@@ -44,11 +75,12 @@
         a {
             color: #3498db;
             text-decoration: none;
-            transition: color 0.3s ease;
+            transition: color 0.3s ease, transform 0.3s ease;
         }
         a:hover {
             color: #2980b9;
             text-decoration: underline;
+            transform: translateY(-2px);
         }
         .category {
             font-weight: bold;
@@ -57,6 +89,14 @@
             border-bottom: 2px solid #3498db;
             padding-bottom: 5px;
         }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            border-radius: 0 0 5px 5px;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -64,58 +104,70 @@
         <h1>Cybersecurity Write-Ups</h1>
         <p class="subtitle">A collection of cybersecurity learning resources and challenges</p>
     </header>
-    
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#HackTheBox">HackTheBox</a></li>
+            <li><a href="#TryHackMe">TryHackMe</a></li>
+            <li><a href="#General">General Security Topics</a></li>
+            <li><a href="#Miscellaneous">Miscellaneous</a></li>
+        </ul>
+    </nav>
+
     <div class="content">
         <p>Welcome to my cybersecurity write-ups page. Here you'll find a collection of my notes, analyses, and solutions from various cybersecurity platforms and challenges.</p>
         
-        <div class="category">HackTheBox</div>
+        <div class="category" id="HackTheBox">HackTheBox</div>
         <ul>
-            <li><a href="getting started_HackTheBox.pdf" target="_blank">Getting Started with HackTheBox</a></li>
-            <li><a href="=HTB STARTING POINT - TIER 0.pdf" target="_blank">HTB Starting Point - Tier 0</a></li>
-            <li><a href="=HTB STARTING POINT - TIER 1.pdf" target="_blank">HTB Starting Point - Tier 1</a></li>
-            <li><a href="HTB STARTING POINT - TIER 2.pdf" target="_blank">HTB Starting Point - Tier 2</a></li>
-            <li><a href="introduction to networking_HackTheBox.pdf" target="_blank">Introduction to Networking</a></li>
-            <li><a href="linux_HackTheBox.pdf" target="_blank">Linux Fundamentals</a></li>
-            <li><a href="metasploit_HackTheBox.pdf" target="_blank">Metasploit Basics</a></li>
-            <li><a href="nmap_HackTheBox.pdf" target="_blank">NMAP Scanning Techniques</a></li>
-            <li><a href="OpenVAS_HackTheBox.pdf" target="_blank">OpenVAS Vulnerability Scanner</a></li>
-            <li><a href="Vulnerability assessments_HackTheBox.pdf" target="_blank">Vulnerability Assessments</a></li>
-            <li><a href="web requests_HackTheBox.pdf" target="_blank">Web Requests and Handling</a></li>
-            <li><a href="windows fundamentals_HackTheBox.pdf" target="_blank">Windows Fundamentals</a></li>
+            <li><i class="fas fa-file-pdf"></i> <a href="getting started_HackTheBox.pdf" target="_blank" aria-label="Getting Started with HackTheBox PDF">Getting Started with HackTheBox</a></li>
+            <li><i class="fas fa-file-pdf"></i> <a href="HTB STARTING POINT - TIER 0.pdf" target="_blank" aria-label="HTB Starting Point - Tier 0 PDF">HTB Starting Point - Tier 0</a></li>
+            <li><i class="fas fa-file-pdf"></i> <a href="HTB STARTING POINT - TIER 1.pdf" target="_blank" aria-label="HTB Starting Point - Tier 1 PDF">HTB Starting Point - Tier 1</a></li>
+            <li><i class="fas fa-file-pdf"></i> <a href="HTB STARTING POINT - TIER 2.pdf" target="_blank" aria-label="HTB Starting Point - Tier 2 PDF">HTB Starting Point - Tier 2</a></li>
+            <li><i class="fas fa-file-pdf"></i> <a href="introduction to networking_HackTheBox.pdf" target="_blank" aria-label="Introduction to Networking PDF">Introduction to Networking</a></li>
+            <li><i class="fas fa-file-pdf"></i> <a href="linux_HackTheBox.pdf" target="_blank" aria-label="Linux Fundamentals PDF">Linux Fundamentals</a></li>
+            <li><i class="fas fa-file-pdf"></i> <a href="metasploit_HackTheBox.pdf" target="_blank" aria-label="Metasploit Basics PDF">Metasploit Basics</a></li>
+            <li><i class="fas fa-file-pdf"></i> <a href="nmap_HackTheBox.pdf" target="_blank" aria-label="NMAP Scanning Techniques PDF">NMAP Scanning Techniques</a></li>
+            <li><i class="fas fa-file-pdf"></i> <a href="OpenVAS_HackTheBox.pdf" target="_blank" aria-label="OpenVAS Vulnerability Scanner PDF">OpenVAS Vulnerability Scanner</a></li>
+            <li><i class="fas fa-file-pdf"></i> <a href="Vulnerability assessments_HackTheBox.pdf" target="_blank" aria-label="Vulnerability Assessments PDF">Vulnerability Assessments</a></li>
+            <li><i class="fas fa-file-pdf"></i> <a href="web requests_HackTheBox.pdf" target="_blank" aria-label="Web Requests and Handling PDF">Web Requests and Handling</a></li>
+            <li><i class="fas fa-file-pdf"></i> <a href="windows fundamentals_HackTheBox.pdf" target="_blank" aria-label="Windows Fundamentals PDF">Windows Fundamentals</a></li>
         </ul>
 
-        <div class="category">TryHackMe</div>
+        <div class="category" id="TryHackMe">TryHackMe</div>
         <ul>
-            <li><a href="attactive directory TryHackMe.pdf" target="_blank">Active Directory Basics</a></li>
-            <li><a href="DNS TryHackMe.pdf" target="_blank">DNS in Detail</a></li>
-            <li><a href="L2 mac flooding TryHackMe.pdf" target="_blank">Layer 2 MAC Flooding</a></li>
-            <li><a href="malware tryhackme.pdf" target="_blank">Malware Analysis</a></li>
-            <li><a href="mitre TryHackMe.pdf" target="_blank">MITRE ATT&CK Framework</a></li>
-            <li><a href="offfesive security TryHackMe.pdf" target="_blank">Offensive Security Basics</a></li>
-            <li><a href="overpass TryHackMe.pdf" target="_blank">Overpass Challenge</a></li>
-            <li><a href="owasp top 10 2021 TryHackMe.pdf" target="_blank">OWASP Top 10 (2021)</a></li>
-            <li><a href="passive recon TryHackMe.pdf" target="_blank">Passive Reconnaissance Techniques</a></li>
-            <li><a href="python TryHackMe.pdf" target="_blank">Python for Penetration Testing</a></li>
-            <li><a href="Reconnaissance TryHackMe.pdf" target="_blank">Reconnaissance Techniques</a></li>
-            <li><a href="soc analysts tryhackme.pdf" target="_blank">SOC Analyst Fundamentals</a></li>
-            <li><a href="SQL TryHackMe.pdf" target="_blank">SQL Injection Basics</a></li>
-            <li><a href="Sweettooth Inc TryHackMe.pdf" target="_blank">Sweettooth Inc Challenge</a></li>
-            <li><a href="threat intelligence TryHackMe.pdf" target="_blank">Threat Intelligence Basics</a></li>
-            <li><a href="wazuh TryHackMe.pdf" target="_blank">Wazuh SIEM Overview</a></li>
-            <li><a href="Wi-Fi penetration testing TryHackMe.pdf" target="_blank">Wi-Fi Penetration Testing</a></li>
-            <li><a href="windows forensics TryHackMe.pdf" target="_blank">Windows Forensics</a></li>
+            <li><i class="fas fa-file-pdf"></i> <a href="attactive directory TryHackMe.pdf" target="_blank" aria-label="Active Directory Basics PDF">Active Directory Basics</a></li>
+            <li><i class="fas fa-file-pdf"></i> <a href="DNS TryHackMe.pdf" target="_blank" aria-label="DNS in Detail PDF">DNS in Detail</a></li>
+            <li><i class="fas fa-file-pdf"></i> <a href="L2 mac flooding TryHackMe.pdf" target="_blank" aria-label="Layer 2 MAC Flooding PDF">Layer 2 MAC Flooding</a></li>
+            <li><i class="fas fa-file-pdf"></i> <a href="malware tryhackme.pdf" target="_blank" aria-label="Malware Analysis PDF">Malware Analysis</a></li>
+            <li><i class="fas fa-file-pdf"></i> <a href="mitre TryHackMe.pdf" target="_blank" aria-label="MITRE ATT&CK Framework PDF">MITRE ATT&CK Framework</a></li>
+            <li><i class="fas fa-file-pdf"></i> <a href="offfesive security TryHackMe.pdf" target="_blank" aria-label="Offensive Security Basics PDF">Offensive Security Basics</a></li>
+            <li><i class="fas fa-file-pdf"></i> <a href="overpass TryHackMe.pdf" target="_blank" aria-label="Overpass Challenge PDF">Overpass Challenge</a></li>
+            <li><i class="fas fa-file-pdf"></i> <a href="owasp top 10 2021 TryHackMe.pdf" target="_blank" aria-label="OWASP Top 10 (2021) PDF">OWASP Top 10 (2021)</a></li>
+            <li><i class="fas fa-file-pdf"></i> <a href="passive recon TryHackMe.pdf" target="_blank" aria-label="Passive Reconnaissance PDF">Passive Reconnaissance</a></li>
+            <li><i class="fas fa-file-pdf"></i> <a href="splunk TryHackMe.pdf" target="_blank" aria-label="Splunk Fundamentals PDF">Splunk Fundamentals</a></li>
+            <li><i class="fas fa-file-pdf"></i> <a href="web requests tryhackme.pdf" target="_blank" aria-label="Web Requests Handling PDF">Web Requests Handling</a></li>
         </ul>
 
-        <div class="category">General Security Topics</div>
+        <div class="category" id="General">General Security Topics</div>
         <ul>
-            <li><a href="malware analysis.pdf" target="_blank">In-Depth Malware Analysis</a></li>
-            <li><a href="intro to web applications_HackTheBox.pdf" target="_blank">Introduction to Web Applications</a></li>
+            <li><i class="fas fa-file-pdf"></i> <a href="bulletproof project - iot vulnerabilities general.pdf" target="_blank" aria-label="IoT Vulnerabilities Report PDF">IoT Vulnerabilities Report</a></li>
+            <li><i class="fas fa-file-pdf"></i> <a href="Bulletproof project - ransomware general.pdf" target="_blank" aria-label="Ransomware Threat Analysis PDF">Ransomware Threat Analysis</a></li>
+            <li><i class="fas fa-file-pdf"></i> <a href="bulletproof project - reconnaissance general.pdf" target="_blank" aria-label="Reconnaissance Techniques PDF">Reconnaissance Techniques</a></li>
+            <li><i class="fas fa-file-pdf"></i> <a href="incident response report general.pdf" target="_blank" aria-label="Incident Response Report PDF">Incident Response Report</a></li>
+            <li><i class="fas fa-file-pdf"></i> <a href="Mitre attack report general.pdf" target="_blank" aria-label="MITRE ATT&CK Report PDF">MITRE ATT&CK Report</a></li>
         </ul>
 
-        <div class="category">Miscellaneous</div>
+        <div class="category" id="Miscellaneous">Miscellaneous</div>
         <ul>
-            <li><a href="recipe generator.pdf" target="_blank">Recipe Generator Project</a></li>
+            <li><i class="fas fa-file-pdf"></i> <a href="Hardware_HackTheBox.pdf" target="_blank" aria-label="Hardware Vulnerabilities PDF">Hardware Vulnerabilities</a></li>
+            <li><i class="fas fa-file-pdf"></i> <a href="Social engineering_HackTheBox.pdf" target="_blank" aria-label="Social Engineering Techniques PDF">Social Engineering Techniques</a></li>
         </ul>
     </div>
+
+    <footer>
+        <p>&copy; 2024 Damian Mutisya. All rights reserved.</p>
+    </footer>
 </body>
 </html>
+
