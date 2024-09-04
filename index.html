@@ -38,34 +38,35 @@
             margin-top: 0.5rem;
             font-size: 1.2rem; /* Slightly enlarged subtitle */
         }
-        nav {
-            display: flex;
-            justify-content: space-around;
-            background-color: #111;
-            border-top: 1px solid #00ff00;
-            border-bottom: 1px solid #00ff00;
-            padding: 15px 0; /* Increased padding for larger navigation bar */
-            margin-bottom: 30px;
-        }
+     nav {
+    background-color: #111;
+    border-top: 1px solid #00ff00;
+    border-bottom: 1px solid #00ff00;
+    margin-bottom: 30px;
+    padding: 15px 0;
+}
         nav ul {
-            display: flex;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        nav li {
-            margin: 0 15px;
-        }
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: space-evenly; /* Even spacing between items */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+       nav li {
+    margin: 5px 15px; /* Increased margin for more spacing */
+}
+
         nav a {
-            color: #00ff00;
-            text-decoration: none;
-            padding: 10px 20px; /* Increased padding around nav links */
-            font-size: 1.2rem; /* Enlarged font size for nav links */
-            transition: color 0.3s ease;
-        }
+    color: #00ff00;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
         nav a:hover {
-            color: #ff66ff; /* Neon pink hover effect */
-        }
+    color: #ff66ff;
+}
         .content {
             background-color: #111;
             padding: 25px;
@@ -114,16 +115,16 @@
     </header>
 
     <!-- Navigation Bar -->
-    <nav>
-        <ul>
-            <li><a href="#HackTheBox">HackTheBox</a></li>
-            <li><a href="#TryHackMe">TryHackMe</a></li>
-            <li><a href="#General">General Security Topics</a></li>
-            <li><a href="#Miscellaneous">Miscellaneous</a></li>
-            <li><a href="#Simulations Reports">Simulations reports</a></li>
-            <li><a href="#Projects Reports">Projects Reports</a></li>
-        </ul>
-    </nav>
+  <nav>
+    <ul>
+        <li><a href="#HackTheBox">HackTheBox</a></li>
+        <li><a href="#TryHackMe">TryHackMe</a></li>
+        <li><a href="#General">General Security Topics</a></li>
+        <li><a href="#Miscellaneous">Miscellaneous</a></li>
+        <li><a href="#Simulations Reports">Simulations Reports</a></li>
+        <li><a href="#Projects Reports">Projects Reports</a></li>
+    </ul>
+</nav>
 
     <div class="content">
         <p>Welcome to my cybersecurity write-ups page. Here you'll find a collection of my notes, analyses, and solutions from various cybersecurity platforms and challenges.</p>
